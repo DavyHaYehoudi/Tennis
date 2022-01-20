@@ -1,0 +1,44 @@
+
+body{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  width: 800px;
+  margin-left: -400px; /* Cette valeur doit être la moitié négative de la valeur du width */
+  margin-top: -200px;
+  font-size: 2rem;
+  font-family: fantasy;
+}
+
+.boutons{
+  display: grid;
+  gap: 20px;
+  height: 150px;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,300px);
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+}
+
+button{
+  background-color: rgb(33, 35, 36);
+  color: whitesmoke;
+  border-radius: .7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+button:hover{
+  background: #2c2f44;
+  transform: scale(1.01);
+}
+
+.displayScore{
+  background-color: blue;
+  color:whitesmoke ;
+  padding: 20px;
+  border-radius: .7rem;
+  text-align: center;
+}
