@@ -17,7 +17,7 @@ export const restartGame = () => ({ type: "restart" });
 
 export const pointScored = (player) => ({
   type: "pointScored",
-  payload: { player: player },
+  payload: { player },
 });
 
 function reducer(state = initialState, action) {
@@ -55,7 +55,7 @@ function reducer(state = initialState, action) {
     if (currentPlayerScore === 40) {
       if (state[otherPlayer] !== 40) {
         // Le joueur à gagné
-        return { ...state, winner: player };
+        return { ...state, winner: player, };
       }
       if (state.advantage === player) {
         // Le joueur à gagné

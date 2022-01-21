@@ -8,6 +8,7 @@ body{
   margin-top: -200px;
   font-size: 2rem;
   font-family: fantasy;
+  color:whitesmoke ;
 }
 
 .boutons{
@@ -37,8 +38,17 @@ button:hover{
 
 .displayScore{
   background-color: blue;
-  color:whitesmoke ;
   padding: 20px;
   border-radius: .7rem;
   text-align: center;
 }
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgb(241, 57, 57);
+  border-radius: .7rem;
+}
+

@@ -6,7 +6,7 @@ const Reset = () => {
     const dispatch = useDispatch();
 
     return (
-        <button onClick={()=> dispatch(restartGame())}>Recommencer</button>
+        <button onClick={()=> dispatch(restartGame())}>Nouveau jeu</button>
     );
 };
 
